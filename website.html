@@ -3,65 +3,75 @@
 
   <head>
     <title>YOUTUBE.COM CLONE</title>
-    
-    <style>
-      p{
-        font-family: Roboto,Arial;
-      }
-    .thumbnail{
-      width: 100%;}
-    .searchbar{
-      font-size: 15px ;
-      display: block;
-      
-    }
-    .vt{
-      font-size: 14px;
-      font-weight: bold;
-      width: 256px;
-      display: block;
-      margin-top: 0;
-      margin-left: 0px;
-
-    }
-    .va,.vs1{
-      color: rgb(96,96,96);
-      margin: 0px;
-      font-size: 12px;
-      
-    }
-   
-    .channel{
-    border-radius: 100px;
-    height: 40px;}
-    .imgc{
-      display:inline-block;
-      vertical-align: top;
-
-    }
-    .ytcon{in-top: 0px;
-      display: inline-block;
-      
-    }
-    .outside-grid{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr ;
-      column-gap: 16px;
-      row-gap: 40px;
-
-    }
-    .grid1{
-      display:grid;
-      grid-template-columns: 50px 1fr;
-    }</style>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+  
   </head>
   <body>
-        <input class="searchbar" type="text" placeholder="Search">
+    <div class="header">
+      <div class="left-section"> 
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+         <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section"> <input class="searchbar" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="searchicon" src="icons/search.svg">
+        <div class="tooltip">Search</div>
+      </button>
+      <button class="voicesearch-button">
+        <img class="voicesearch" src="icons/voice-search-icon.svg">
+         <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+           <div class="tooltip">Create</div>
+        </div> 
+        
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <div class="notifications-icon-cont"> <img class="notifications-icon" src="icons/notifications.svg"><div class="notifications-count">3</div></div>
+        
+        <img class="current-user-picture" src="icons/channel-profile1.jpg">
+      </div>
+             
+            
+    </div>
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+         <img src="icons/explore.svg">
+         <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+         <img src="icons/subscriptions.svg">
+         <div>subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+         <img src="icons/originals.svg">
+         <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+         <img src="icons/youtube-music.svg">
+         <div>Youtube Music</div>
+      </div>
+      <div class="sidebar-link">
+         <img src="icons/library.svg">
+         <div>Library</div>
+      </div>
+    </nav>
+
   <div class="outside-grid">
 
     
   <div class="yt">
-      <div> <img class="thumbnail" src="thumbnails/thumbnail-1.webp"></div>
+      <div class="thumb"> <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+      <div class="video-time"> 14:20</div></div>
       <div class="grid1">
     <div class="imgc"><img class="channel" src="channel-pics/th-ch.jpeg"></div>
      <div class="ytcon"><p class="vt">
@@ -74,7 +84,8 @@
      
     
     <div class="yt">
-      <div> <img class="thumbnail" src="thumbnails/thumbnail-2.webp"></div>
+      <div class="thumb"> <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+       <div class="video-time"> 8:22</div></div>
       <div>
     <div class="imgc"><img class="channel" src="channel-pics/th-ch1.jpeg"></div>
      <div class="ytcon"><p class="vt">
@@ -90,7 +101,8 @@ Try Not To Laugh Challenge #9</p>
      
   
   <div class="yt">
-      <div> <img class="thumbnail" src="thumbnails/thumbnail-3.webp"></div>
+      <div class="thumb"> <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+       <div class="video-time">9:13 </div></div>
       <div class="grid1">
     <div class="imgc"><img class="channel" src="channel-pics/th-ch3.jpeg"></div>
      <div class="ytcon"><p class="vt">
@@ -104,7 +116,8 @@ Try Not To Laugh Challenge #9</p>
      </div>
     
     <div class="yt">
-      <div> <img class="thumbnail" src="thumbnails/thumbnail-4.webp"></div>
+      <div class="thumb"> <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+       <div class="video-time">22:09</div></div>
       <div class="grid1">
     <div class="imgc"><img class="channel" src="channel-pics/th-ch4.jpeg"></div>
      <div class="ytcon"><p class="vt">
@@ -121,7 +134,8 @@ The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
      
       
   <div class="yt">
-      <div> <img class="thumbnail" src="thumbnails/thumbnail-5.webp"></div>
+      <div class="thumb"> <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
+       <div class="video-time"> 11:17</div></div>
       <div class="grid1">
     <div class="imgc"><img class="channel" src="channel-pics/th-ch5.jpeg"></div>
      <div class="ytcon"><p class="vt">
@@ -135,7 +149,8 @@ The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
      </div>
     
     <div class="yt">
-      <div> <img class="thumbnail" src="thumbnails/thumbnail-6.webp"></div>
+      <div class="thumb"> <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
+       <div class="video-time"> 19:59</div></div>
       <div class="grid1">
     <div class="imgc"><img class="channel" src="channel-pics/th-ch6.jpeg"></div>
      <div class="ytcon"><p class="vt">
